@@ -1,0 +1,1068 @@
+/* section 1 */
+
+.home-container {
+    background-color: #222222;
+    width: 100%;
+    height: 100vh;
+}
+
+.sectionOne {
+    background-image: url(../../assets/IN-en-20221219-popsignuptwoweeks-perspective_alpha_website_large.jpg);
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.sectionOne::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.3);
+    box-shadow: inset 120px 100px 250px #000000, inset -120px -100px 250px #000000;
+
+}
+
+/* navbar */
+.navbarDesign {
+    position: relative;
+    z-index: 2;
+
+}
+
+.navbarDesign img {
+    width: 10%;
+    margin-top: 20px;
+    margin-left: 50px;
+}
+
+.navbarDesign select {
+    background-color: #00000066;
+    border: 1px solid white;
+    border-radius: 20px;
+    color: white;
+    float: right;
+    padding: 5px 10px;
+    border-radius: 3px;
+    position: relative;
+    right: 85px;
+    margin-top: 20px;
+
+}
+
+.navbarDesign button {
+    background-color: #ef0914;
+    color: white;
+    padding: 5px 16px;
+    border-radius: 3px;
+    float: right;
+    position: relative;
+    right: 55px;
+    border: none;
+    margin-top: 20px;
+
+}
+
+/* content */
+.contentParentDiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contentChildDiv {
+    z-index: 2;
+    position: relative;
+    top: -175px;
+    color: white;
+    width: 52%;
+    text-align: center;
+}
+
+.contentChildDiv h1 {
+    color: white;
+    font-size: 4rem;
+    position: relative;
+    top: 50vh;
+    font-weight: 650;
+}
+
+.contentChildDiv h2 {
+
+    color: white;
+    font-size: 1.625rem;
+    position: relative;
+    top: 50vh;
+
+}
+
+.contentChildDiv h3 {
+
+    color: white;
+    font-size: 1.2rem;
+    position: relative;
+    top: 52vh;
+
+}
+
+.search input {
+    position: relative;
+    top: 54vh;
+    width: 500px;
+    height: 60px;
+    float: left;
+    left: 50px;
+    padding: 5px 10px;
+    border: none;
+
+}
+
+.contentChildDiv button {
+    border-radius: 0px;
+    position: relative;
+    top: 51.4vh;
+    width: 230px;
+    height: 60px;
+    right: 19px;
+    font-size: 1.875rem;
+    padding: 5px 16px;
+    float: right;
+    color: white;
+    border: none;
+
+
+}
+
+/* section 1 mobile & tab view */
+@media(max-width:500px) {
+    .sectionOne {
+        background-image: url(../../assets/IN-en-20221219-popsignuptwoweeks-perspective_alpha_website_large.jpg);
+        width: 100%;
+        height: 70vh;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .sectionOne::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 70vh;
+        z-index: 1;
+        background: rgba(0, 0, 0, 0.3);
+        box-shadow: inset 120px 100px 250px #000000, inset -120px -100px 250px #000000;
+
+    }
+
+
+    /* navbar */
+    .navbarDesign {
+        position: relative;
+        z-index: 2;
+
+    }
+
+    .navbarDesign img {
+        width: 27%;
+        margin-top: 27px;
+        margin-left: 12px;
+    }
+
+    .navbarDesign select {
+        background-color: #00000066;
+        color: white;
+        float: right;
+        padding: 4px 10px;
+        border-radius: 3px;
+        position: relative;
+        right: 50px;
+        margin-top: 20px;
+
+    }
+
+    .navbarDesign button {
+        background-color: #ef0914;
+        color: white;
+        padding: 4px 16px;
+        border-radius: 3px;
+        float: right;
+        position: relative;
+        right: 35px;
+        border: none;
+        margin-top: 20px;
+
+    }
+
+    /* content */
+
+    .contentParentDiv {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .contentChildDiv {
+        z-index: 2;
+        position: relative;
+        top: -280px;
+        color: white;
+        width: 100%;
+        text-align: center;
+    }
+
+    .contentChildDiv h1 {
+        color: white;
+        font-size: 1.75rem;
+        position: relative;
+        top: 50vh;
+        font-weight: 650;
+    }
+
+    .contentChildDiv h2 {
+
+        color: white;
+        font-size: 1.125rem;
+        position: relative;
+        top: 50vh;
+
+    }
+
+    .contentChildDiv h3 {
+
+        color: white;
+        font-size: 18px;
+        font-weight: 400;
+        position: relative;
+        top: 52vh;
+
+    }
+
+    .search input {
+        position: relative;
+        top: 54vh;
+        width: 325px;
+        height: 45px;
+        float: left;
+        left: 17px;
+        padding: 5px 10px;
+        border: none;
+
+    }
+
+    .contentChildDiv button {
+        border-radius: 0px;
+        position: relative;
+        top: 53vh;
+        width: 170px;
+        height: 45px;
+        right: 100px;
+        font-size: 1rem;
+        padding: 5px 16px;
+        float: right;
+        color: white;
+        border: none;
+
+
+    }
+
+}
+
+
+/* section 2 */
+
+.sectionTwo {
+    margin-top: 10px;
+    background-color: #000000;
+    width: 100%;
+    height: 25rem;
+}
+
+#sectionTwotextComponent {
+    float: left;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10%;
+}
+
+#sectionTwotextComponent h1 {
+    color: white;
+    font-size: 3.125rem;
+    line-height: 1.1;
+    margin-bottom: 0.5rem;
+    text-align: start;
+    justify-content: start;
+    margin-right: 96px;
+}
+
+#sectionTwotextComponent h2 {
+    font-size: 1.625rem;
+    font-weight: 400;
+    color: white;
+}
+
+
+#sectionTwoImageComponent {
+    float: right;
+}
+
+#sectionTwoImageComponent img {
+    width: 100%;
+    position: relative;
+    left: 50px;
+    z-index: 2;
+}
+
+#sectionTwoImageComponent video {
+    width: 73%;
+    position: relative;
+    left: 116px;
+    top: -51%;
+
+}
+
+/* section 2 mobile & tab view */
+@media(max-width:500px) {
+    .sectionTwo {
+        margin-top: 10px;
+        background-color: #000000;
+        width: 100%;
+        height: 28rem;
+    }
+
+    #sectionTwotextComponent h1 {
+        color: white;
+        font-size: 1.625rem;
+        line-height: 1.1;
+        margin-bottom: 0.5rem;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        margin: 20px 0 20px 0;
+    }
+
+    #sectionTwotextComponent h2 {
+        font-size: 1.125rem;
+        font-weight: 400;
+        color: white;
+        margin: 0 20px 0 30px;
+    }
+
+
+    #sectionTwoImageComponent {
+        float: right;
+        position: relative;
+        bottom: 30px;
+    }
+
+    #sectionTwoImageComponent img {
+        width: 90%;
+        position: relative;
+        left: 20px;
+        z-index: 2;
+    }
+
+    #sectionTwoImageComponent video {
+        width: 65%;
+        position: relative;
+        left: 65px;
+        top: -51%;
+
+    }
+
+
+}
+
+/* section 3 */
+.sectionThree {
+    margin-top: 10px;
+    background-color: #000000;
+    width: 100%;
+    height: 25rem;
+
+}
+
+.sectionThree img {
+    width: 100%;
+    margin-left: -100px;
+    z-index: 1;
+}
+
+.sectionThreeImageComponent {
+    background-color: #000000;
+    border: 1px solid gray;
+    border-radius: 15px;
+    height: 20%;
+    width: 80%;
+    position: relative;
+    top: -125px;
+    left: -52px;
+    z-index: 2;
+
+}
+
+
+.sectionThreeImageComponent .img2 {
+    width: 15%;
+    position: relative;
+    left: 110px;
+    top: 11px;
+}
+
+.sectionThreeImageComponent .img3 {
+    width: 10%;
+    position: relative;
+    top: -95px;
+    left: 430px;
+
+}
+
+
+.sectionThreeImageComponent p {
+    position: relative;
+    top: -55px;
+    left: 110px;
+    margin-bottom: 0px;
+}
+
+#sectionThreeTextComponent h1 {
+    color: white;
+    font-size: 3.125rem;
+    line-height: 1.1;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    position: relative;
+    left: 0px;
+}
+
+#sectionThreeTextComponent h2 {
+    color: white;
+    font-size: 1.625rem;
+    font-weight: 400;
+    padding: 10px 0 0 0;
+}
+
+#sectionThreeTextComponent {
+    position: relative;
+    top: 100px;
+    width: 34.333333%;
+
+}
+
+/* section 3 mobile & tab view */
+
+@media(max-width:500px) {
+    .sectionThree {
+        margin-top: 10px;
+        background-color: #000000;
+        width: 100%;
+        height: 28rem;
+
+    }
+
+    .sectionThree img {
+        width: 100%;
+        position: relative;
+        left: 95px;
+        top: 150px;
+        z-index: 1;
+    }
+
+    .sectionThreeImageComponent {
+        background-color: #000000;
+        border: 1px solid gray;
+        border-radius: 15px;
+        height: 20%;
+        width: 80%;
+        position: relative;
+        top: 55px;
+        left: 40px;
+        z-index: 2;
+
+    }
+
+
+    .sectionThreeImageComponent .img2 {
+        width: 15%;
+        position: relative;
+        left: 110px;
+        top: 11px;
+    }
+
+    .sectionThreeImageComponent .img3 {
+        width: 10%;
+        position: relative;
+        top: -85px;
+        left: 345px;
+
+    }
+
+
+    .sectionThreeImageComponent p {
+        position: relative;
+        top: -50px;
+        left: 85px;
+        margin-bottom: 0px;
+    }
+
+    #sectionThreeTextComponent h1 {
+        color: white;
+        font-size: 1.625rem;
+        line-height: 1.1;
+        margin-bottom: 0.5rem;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        /* margin-right: 20px; */
+        margin: 20px 0 20px 0;
+        position: relative;
+        top: 20px;
+        left: 0px;
+    }
+
+    #sectionThreeTextComponent h2 {
+        color: white;
+        font-size: 1.125rem;
+        font-weight: 400;
+        padding: 15px 20px 0 30px;
+    }
+
+    #sectionThreeTextComponent {
+        position: relative;
+        top: -420px;
+        width: 100%;
+
+    }
+
+}
+
+/* section 4 */
+
+.sectionFour {
+    margin-top: 10px;
+    background-color: #000000;
+    width: 100%;
+    height: 25rem;
+
+}
+
+#sectionFourtextComponent {
+    position: relative;
+    top: 120px;
+
+}
+
+
+#sectionFourtextComponent h1 {
+    color: white;
+    font-size: 3.125rem;
+    line-height: 1.1;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    position: relative;
+    left: 0px;
+}
+
+#sectionFourtextComponent h2 {
+    color: white;
+    font-size: 1.625rem;
+    font-weight: 400;
+    padding: 10px 0 0 0;
+
+}
+
+#sectionFourImageComponent img {
+    width: 100%;
+    position: relative;
+    left: 70px;
+    top: 40px;
+    z-index: 2;
+
+}
+
+#sectionFourImageComponent video {
+    width: 60%;
+    position: relative;
+    left: 165px;
+    top: -55%;
+
+}
+
+/* section 4 mobile & tab view */
+
+@media(max-width:500px) {
+    .sectionFour {
+        margin-top: 10px;
+        background-color: #000000;
+        width: 100%;
+        height: 28rem;
+
+    }
+
+    #sectionFourtextComponent {
+        position: relative;
+        top: 0px;
+
+    }
+
+
+    #sectionFourtextComponent h1 {
+        color: white;
+        font-size: 1.625rem;
+        line-height: 1.1;
+        margin-bottom: 0.5rem;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        margin: 20px 0 20px 0;
+    }
+
+    #sectionFourtextComponent h2 {
+        font-size: 1.125rem;
+        font-weight: 400;
+        color: white;
+        margin: -15px 20px 0 20px;
+
+    }
+
+    #sectionFourImageComponent img {
+        width: 100%;
+        position: relative;
+        left: 0px;
+        /* top: 40px; */
+        z-index: 2;
+
+    }
+
+    #sectionFourImageComponent video {
+        width: 65%;
+        position: relative;
+        left: 60px;
+        top: -51%;
+
+    }
+
+}
+
+/* section 5 */
+
+.sectionFive {
+    margin-top: 10px;
+    background-color: #000000;
+    width: 100%;
+    height: 25rem;
+
+}
+
+#sectionFiveImageComponent img {
+    width: 100%;
+}
+
+#sectionFiveTextComponent h1 {
+    color: white;
+    font-size: 3.125rem;
+    line-height: 1.1;
+    margin-bottom: 0.5rem;
+    text-align: start;
+    justify-content: start;
+    margin-right: 96px;
+}
+
+#sectionFiveTextComponent h2 {
+    font-size: 1.625rem;
+    font-weight: 400;
+    color: white;
+}
+
+#sectionFiveTextComponent {
+    position: relative;
+    top: 100px;
+    left: 50px;
+}
+
+/* section 5 mobile & tab view */
+
+@media(max-width:500px) {
+    .sectionFive {
+        margin-top: 10px;
+        background-color: #000000;
+        width: 100%;
+        height: 28rem;
+
+    }
+
+    #sectionFiveImageComponent img {
+        width: 90%;
+        position: relative;
+        left: 25px;
+        top: 190px;
+    }
+
+    #sectionFiveTextComponent h1 {
+        color: white;
+        font-size: 1.625rem;
+        margin-bottom: 0.5rem;
+        position: relative;
+        top: 5px;
+        left: 30px;
+    }
+
+    #sectionFiveTextComponent h2 {
+        color: white;
+        font-size: 1.125rem;
+        font-weight: 400;
+        padding: 15px 20px 0 30px;
+        position: relative;
+        left: 0px;
+    }
+
+    #sectionFiveTextComponent {
+        position: relative;
+        top: -215px;
+        left: 25px;
+        width: 90%;
+    }
+
+}
+
+/* section - 6 */
+
+.sectionSix {
+    margin-top: 10px;
+    background-color: #000000;
+    width: 100%;
+}
+
+.sectionSixComponents {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+
+}
+
+.sectionSixComponents h1 {
+    color: white;
+    margin-top: 20px;
+    line-height: 1.1;
+    margin-bottom: 0.5rem;
+}
+
+.accordionSection {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+
+}
+
+.container {
+    width: 50%;
+}
+
+@media(max-width:500px) {
+    .container {
+        width: 100%;
+    }
+
+}
+
+/* accordian */
+
+
+.accordion-heading {
+    cursor: pointer;
+    height: 60px;
+    background-color: #303030;
+    text-align: start;
+    color: white;
+    font-size: 1.625rem;
+    padding: 1em 2.2em 2.2em 1.2em;
+    font-weight: 400;
+    margin-top: 10px;
+    border-radius: 2px;
+}
+
+.accordion-content {
+    transition: 4s ease-in-out;
+    padding: 0.8em 2.2em 0.8em 1.2em;
+    background-color: #303030;
+    border: 3px solid black;
+    color: white;
+    text-align: justify;
+    font-size: 1.625rem;
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
+    animation-name: slideDown;
+    animation-duration: 1s;
+    -webkit-animation-duration: 1s;
+    animation-timing-function: ease;
+    -webkit-animation-timing-function: ease;
+}
+
+@keyframes slideDown {
+    0% {
+        transform: translateY(-100%);
+    }
+
+    50% {
+        transform: translateY(8%);
+    }
+
+    65% {
+        transform: translateY(-4%);
+    }
+
+    80% {
+        transform: translateY(4%);
+    }
+
+    95% {
+        transform: translateY(-2%);
+    }
+
+    100% {
+        transform: translateY(0%);
+    }
+}
+
+.up-icon {
+    transition: 0.2s ease-out;
+    float: right;
+}
+
+.icon {
+    animation-name: icon;
+    transform: rotate(45deg);
+    transition: 0.2s ease-out;
+}
+
+/* Search Section */
+
+.searchSection {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+
+.searchSection h3 {
+    font-size: 1.2rem;
+    padding-bottom: 20px;
+    color: white;
+}
+
+.searchBoxTwo input {
+    position: relative;
+    top: 0vh;
+    width: 500px;
+    height: 60px;
+    /* float: left; */
+    left: -120px;
+    padding: 5px 10px;
+    border: none;
+}
+
+.searchBoxTwo button {
+    position: relative;
+    top: -8.1vh;
+    width: 230px;
+    height: 60px;
+    right: -245px;
+    font-size: 1.875rem;
+    padding: 5px 16px;
+    /* float: right; */
+    color: white;
+    border: none;
+    background-color: #ef0914;
+
+
+}
+
+/* section 6 mobile & tab view */
+
+@media(max-width:500px) {
+    .searchBoxTwo input {
+        position: relative;
+        top: 0vh;
+        width: 325px;
+        height: 45px;
+        left: 0px;
+        padding: 5px 10px;
+        border: none;
+
+    }
+
+    .searchBoxTwo button {
+        margin-top: 10px;
+        margin-bottom: 20px;
+        position: relative;
+        top: 0vh;
+        width: 170px;
+        height: 45px;
+        right: 0px;
+        font-size: 1rem;
+        padding: 5px 16px;
+        color: white;
+        border: none;
+
+
+    }
+
+    .sectionSixComponents h1 {
+        padding: 5px 15px 5px 15px;
+    }
+
+
+    .accordion-heading {
+        font-size: 1.165rem;
+        padding: 15px 10px 15px 10px;
+    }
+
+    .accordion-content {
+        font-size: 1.165rem;
+        padding: 15px 10px 15px 10px;
+
+    }
+
+}
+
+/* Footer */
+.footer {
+    margin-top: 10px;
+    background-color: #000000;
+    width: 100%;
+    height: auto;
+
+}
+
+.footerParentDiv {
+    width: 60%;
+    height: auto;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    position: relative;
+    left: 380px;
+
+}
+
+.footerChildDivMain {
+    width: 100%;
+    height: 35vh;
+    display: flex;
+
+
+}
+
+.footerChildGroups {
+    display: flex;
+}
+
+.footerChildGroupOne {
+    display: flex;
+
+}
+
+.footerChildGroupTwo {
+    display: flex;
+
+}
+
+/* .footerChildDiv {
+    margin-top: 20px;
+    border: 5px solid black;
+    width: 25%;
+    height: auto;
+} */
+
+
+
+
+.footerParentDiv h3 {
+    color: #737373;
+    font-size: 1em;
+}
+
+.footerChildDiv ul {
+    color: #737373;
+    font-size: 1em;
+    font-weight: 500;
+    list-style: none;
+}
+
+.footerChildDiv p {
+    color: #737373;
+    font-size: 1em;
+    position: relative;
+    top: 70px;
+    left: 30px;
+
+}
+
+/* footer mobile & tab view */
+@media(max-width:500px) {
+    .footerChildDivMain {
+        width: 100%;
+        height: 50vh;
+        display: flex;
+
+
+    }
+
+
+    .footerChildGroups {
+        position: relative;
+        top: 10px;
+        left: 0px;
+
+    }
+
+    .footerChildGroupOne {
+        display: inline-block;
+    }
+
+    .footerChildGroupTwo {
+        display: inline-block;
+    }
+
+    .footerChildDiv select {
+        position: relative;
+        top: 100px;
+        left: -45px;
+    }
+
+    .unorderedListTwo {
+        position: relative;
+        top: -75px;
+        left: 0px;
+
+    }
+
+    .footerParentDiv {
+        width: 100%;
+        height: auto;
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+
+    .footerChildDiv p {
+        position: relative;
+        top: 155px;
+        left: 30px;
+
+    }
+    .footerParentDiv {
+        left: 0px;
+    
+    }
+    
+
+
+}

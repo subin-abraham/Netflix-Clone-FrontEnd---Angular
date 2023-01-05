@@ -1,0 +1,28 @@
+<div class="registerParent">
+    <div class="headerSection">
+        <div class="logo container-fluid">
+            <img src="../../assets/logo.png" alt="">
+        </div>
+        <div routerLink="/sign-In" class="signinButton">Sign In</div>
+    </div>
+    <div class="registrationForm">
+        <div class="registrationFormChild">
+            <h1>Create a password to start your membership</h1>
+            <div class="content">Just a few more steps and you're done!</div>
+            <div class="content">We hate paperwork, too.</div>
+            <div class="registrationSection">
+                <form [formGroup]="registerform" (ngSubmit)="register()">
+                    <input formControlName="emailId" class="inputSection" type="text" placeholder="Email" id="registrationEmail"> 
+                    <br>
+                    <input formControlName="password" class="inputSection"  type="password" placeholder="Password" id="registrationPassword">
+                    <br>
+                    <button>Register</button>
+                </form>
+        
+            </div>
+        
+        </div>
+
+    </div>
+
+</div>
