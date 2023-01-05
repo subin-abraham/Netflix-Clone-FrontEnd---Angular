@@ -5,10 +5,18 @@
                 <div class="col-lg-2 col-md-2 col-sm-12"></div>
                 <div class="col-lg-8 col-md-8 col-sm-12">
                     <h1>Sign In</h1>
-                    <form action="">
-                        <input class="m-2 inputBox" type="text" placeholder="Email or Phone number" id="sighInEmail">
+                    <form  [formGroup]="loginform" (ngSubmit)="login()">
+                        <input formControlName="emailId" class="m-2 inputBox" type="text" placeholder="Email or Phone number" id="sighInEmail">
+                        <div *ngIf="this.loginform.get('emailId')?.errors && this.loginform.get('emailId')?.touched">
+                            <p class="text-danger">Invalid Email Id</p>
+                        </div>
+    
                         <br>
-                        <input class="m-2 inputBox" type="password" placeholder="Password" id="signinPassword">
+                        <input formControlName="password" class="m-2 inputBox" type="password" placeholder="Password" id="signinPassword">
+                        <div *ngIf="this.loginform.get('password')?.errors && this.loginform.get('password')?.touched">
+                            <p class="text-danger">Invalid password</p>
+                        </div>
+    
                         <br>
                         <button>Sign In</button>
                     </form>

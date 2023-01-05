@@ -16,5 +16,12 @@ export class DataServicesService {
     return this.http.post('http://localhost:3000/register', data)
 
   }
+  login(emailId:any,password:any){
+    const data={
+      emailId,
+      password,
+    }
+    return this.http.post('http://localhost:3000/login', data)
+  }
 
 }
